@@ -1,0 +1,17 @@
+### Valid Signup
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password"
+}
+
+### Invalid Signup - invalid email
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "email": "testm",
+  "password": "password"
+}
