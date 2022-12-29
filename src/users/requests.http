@@ -17,13 +17,13 @@ Content-Type: application/json
 }
 
 ### Find user by ID
-GET http://localhost:3000/auth/1
+GET http://localhost:3000/auth/2
 
 ### Find all users with given email
 GET http://localhost:3000/auth?email=test@test.com
 
 ### Delete User by ID 
-DELETE http://localhost:3000/auth/1
+DELETE http://localhost:3000/auth/5
 
 ### Update User
 PATCH http://localhost:3000/auth/2
@@ -31,5 +31,5 @@ Content-Type: application/json
 
 {
   "email": "testm@test.com",
-  "password": "passwordsf"
+  "password": "passwordssf"
 }
