@@ -17,6 +17,7 @@ import { UserDto } from './dtos/user.dto';
 
 import { UpdateUserDto } from './dtos/update-user.dto';
 @Controller('auth')
+@Seralize(UserDto)
 export class UsersController {
   constructor(private usersService: UsersService) {}
 
@@ -26,7 +27,6 @@ export class UsersController {
     this.usersService.create(data);
   }
 
-  @Seralize(UserDto)
   @Get('/:id')
   async findUser(@Param('id') id: string) {
     console.log('In the handler');
